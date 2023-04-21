@@ -1,0 +1,16 @@
+__pycache__
+.idea
+.ipynb_checkpoints
+.DS_Store
+._.DS_Store
+binance_keys.json
+*.txt
+*.csv
+.log
+data.json
+artifacts/
+shitcoin/investments/
+shitcoin/pumpit/*.json
+shitcoin/pumpit/*.log
+secret.json
+*.json

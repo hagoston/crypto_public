@@ -1,0 +1,278 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
+		"inputs": [],
+		"name": "_owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "_owner_2",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "transfer_tokens_to",
+				"type": "address"
+			}
+		],
+		"name": "destroyContr",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "destroyContr",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getDividendStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getParams",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "reward_token_addr",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "dividend_distribution_function",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount_to_buy",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address[]",
+				"name": "tracker_addresses",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "tracker_currencies",
+				"type": "address[]"
+			},
+			{
+				"internalType": "string",
+				"name": "claim_function",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "reward_token_addr",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "dividend_distribution_function",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount_to_buy",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address[]",
+				"name": "tracker_addresses",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "tracker_currencies",
+				"type": "address[]"
+			},
+			{
+				"internalType": "string",
+				"name": "claim_function",
+				"type": "string"
+			}
+		],
+		"name": "initContract",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_owner",
+				"type": "address"
+			}
+		],
+		"name": "initialize",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "oneShotClaim",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "reward_token_addr",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "dividend_distribution_function",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount_to_buy",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address[]",
+				"name": "tracker_addresses",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "tracker_currencies",
+				"type": "address[]"
+			}
+		],
+		"name": "oneShotExecute",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "ownershipTest",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			}
+		],
+		"name": "refundLeftover",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "token",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			}
+		],
+		"name": "transferAllToken",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bool",
+				"name": "convert_to_bnb",
+				"type": "bool"
+			}
+		],
+		"name": "withdrawClaimedTokens",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"stateMutability": "payable",
+		"type": "receive"
+	}
+]

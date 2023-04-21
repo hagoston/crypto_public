@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+message Message {
+  string text = 1;
+}
+
+message Reply {
+  string text = 1;
+}
+
+service Messenger {
+  rpc SendMessage(Message) returns (Reply) {}
+}

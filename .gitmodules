@@ -1,0 +1,6 @@
+[submodule "3rd_party/cryptofeed"]
+	path = 3rd_party/cryptofeed
+	url = https://github.com/hagoston/crpytofeed.git
+[submodule "3rd_party/cryptostore"]
+	path = 3rd_party/cryptostore
+	url = https://github.com/hagoston/cryptostore.git
