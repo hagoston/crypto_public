@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 import sys
 from scipy.optimize import minimize_scalar
-sys.path.append('../shitcoin/MysTrader/src')
+sys.path.append('../altcoin/MysTrader/src')
 from web3bsc import Web3BSC
 from directWeb3 import DirectWeb3
 import logging

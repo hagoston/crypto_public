@@ -9,8 +9,8 @@ binance_keys.json
 .log
 data.json
 artifacts/
-shitcoin/investments/
-shitcoin/pumpit/*.json
-shitcoin/pumpit/*.log
+altcoin/investments/
+altcoin/pumpit/*.json
+altcoin/pumpit/*.log
 secret.json
 *.json

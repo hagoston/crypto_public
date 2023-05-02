@@ -2,7 +2,7 @@
 This is a hobby repository, where I keep track of my journey into cryptocurrencies and EVM-based smart contracts. This repo contains various projects and tools I've created along the way.
 <br><br><br>
 
-### ├── shitcoin 💩
+### ├── altcoin 💩
 
 Containing code for interacting with and monitoring EVM-compatible blockchains and smart contracts for various tasks. These implementations are mainly written in python with web3 but also include Solidity and Golang codes.
 #### **web3bsc**

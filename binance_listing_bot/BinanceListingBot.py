@@ -74,9 +74,9 @@ class BinanceListingBot:
         except:
             copy_trading_enabled = False
         if copy_trading_enabled:
-            sys.path.append('../shitcoin/utils')
-            sys.path.append('../shitcoin/web3bsc/reward_token')
-            sys.path.append('../shitcoin/web3bsc')
+            sys.path.append('../altcoin/utils')
+            sys.path.append('../altcoin/web3bsc/reward_token')
+            sys.path.append('../altcoin/web3bsc')
             from web3bsc import Web3BSC
             self.web3bsc = Web3BSC(data_json=data_json_file)
             # start BSC block listener
@@ -91,8 +91,8 @@ class BinanceListingBot:
             'eth': None
         }
         try:
-            sys.path.append('../shitcoin/web3bsc')
-            sys.path.append('../shitcoin/web3bsc/reward_token')
+            sys.path.append('../altcoin/web3bsc')
+            sys.path.append('../altcoin/web3bsc/reward_token')
             from directWeb3 import DirectWeb3
             from db_handler import DBHandler
             for network_id in range(1, 3):

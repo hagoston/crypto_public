@@ -1,7 +1,7 @@
 import sys
-sys.path.append('../../shitcoin/utils')
-sys.path.append('../../shitcoin/web3bsc')
-sys.path.append('../../shitcoin/web3bsc/reward_token')
+sys.path.append('../../altcoin/utils')
+sys.path.append('../../altcoin/web3bsc')
+sys.path.append('../../altcoin/web3bsc/reward_token')
 
 from web3bsc import Web3BSC
 from web3 import Web3

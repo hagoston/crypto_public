@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	pb "crypto/shitcoin/pumpit/grpc/server/message" // gRPC messaging
+	pb "crypto/altcoin/pumpit/grpc/server/message" // gRPC messaging
 
 	"go.uber.org/zap"
 

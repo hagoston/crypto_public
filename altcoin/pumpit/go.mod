@@ -1,4 +1,4 @@
-module crypto/shitcoin/pumpit
+module crypto/altcoin/pumpit
 
 go 1.19
 
