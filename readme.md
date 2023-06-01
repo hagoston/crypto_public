@@ -20,8 +20,6 @@ Containing code for interacting with and monitoring EVM-compatible blockchains a
 * token price converter and updater from lp pair
 #### **crygo/div_finder**
 Golang code which can scan the Binance Smart Chain blockchain for contracts with specific function signatures. It processes around 400 blocks/sec and outputs a list of contract addresses with the creation block timestamps.
-#### **pumpit**
-Trading bot for the KuCoin exchange written in Golang. It uses 3 different methods to listen for signals on a designated Telegram channel. When the fastest method is triggered, the trading bot places trailing stop loss orders using the KuCoin API.
 #### **utils**
 Simple webscraper utilizing Beautiful Soup python package.
 
