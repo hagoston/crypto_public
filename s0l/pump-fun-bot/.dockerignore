@@ -1,0 +1,26 @@
+# Python cache and virtual environments
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+.venv/
+.env
+.env.*
+
+# IDE and editor specific
+.vscode/
+*.ipynb
+
+# Local/generated data
+logs/
+db_postgresql/
+db_dumps/
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+data_store/serialized_txs/
+idl/node_modules/
+
+# Git
+.git/

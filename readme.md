@@ -52,6 +52,10 @@ Experimental code for compressing candlestick data using an autoencoder neural n
 
 Multithreaded data grabber for fetching Binance historical tick and kline data. Since it may take hours for the server to generate a download link after a request, this code manages the entire process, handling the waiting and downloading steps for you.
 
+### ├── s0l ⚡
+
+Solana-focused tooling, including `pump-fun-bot`: a pump.fun market ingestion and research project that decodes Yellowstone gRPC streams for pump.fun, pump.fun AMM, Raydium Launchpad, and Raydium CPMM events, then stores normalized event data in TimescaleDB for analysis and strategy experiments.
+
 ### ├── scripts 🛠️
 
 Various short utility scripts, including data plotting and preprocessing tools. As crypto tick data can occupy significant amount of storage space, this folder also features a compression test code that compares different compression methods and storage types, as well as explores database storage possibilities for efficient data management.

@@ -1,0 +1,22 @@
+{
+	"name": "pump-fun-devel-container",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "pumpfun_devel",
+	"workspaceFolder": "/workspace",
+	"shutdownAction": "stopCompose",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ],
+            "settings": {
+                "python.linting.enabled": true,
+                "python.linting.pylintEnabled": true
+            }
+        }
+    },
+	"postCreateCommand": "python -m pip install --no-cache-dir -r /workspace/requirements.txt",
+	"runServices": ["pumpfun_devel", "pumpfun_db"],
+	"overrideCommand": true
+}

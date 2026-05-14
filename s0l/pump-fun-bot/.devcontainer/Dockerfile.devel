@@ -1,0 +1,30 @@
+FROM ubuntu:22.04
+
+# Prevent interactive dialogs during package installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Set up a working directory
+WORKDIR /workspace
+
+# Install system dependencies and Python
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    python3.11 \
+    python3-pip \
+    python3-venv \
+    python3-dev \
+    python3-pyqt5 \
+    qtbase5-dev \
+    qt5-qmake \
+    libxcb-xinerama0 \
+    git \
+    curl \
+    build-essential && \
+    rm -rf /var/lib/apt/lists/*
+
+# Make sure python3 is the default
+RUN ln -sf /usr/bin/python3 /usr/bin/python && \
+    ln -sf /usr/bin/pip3 /usr/bin/pip
+
+# Upgrade pip
+RUN python -m pip install --upgrade pip

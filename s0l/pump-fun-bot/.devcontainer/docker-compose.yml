@@ -1,0 +1,37 @@
+services:
+  pumpfun_devel:
+    build:
+      context: .
+      dockerfile: Dockerfile.devel
+      network: host
+    container_name: pumpfun_devel
+    volumes:
+      - ..:/workspace
+    working_dir: /workspace
+    network_mode: "host"
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    environment:
+      DATABASE_URL: "postgresql://postgres:postgres@pumpfun_db:5432/pumpfundata"
+
+  pumpfun_db:
+    image: timescale/timescaledb-ha:pg17
+    container_name: pumpfun_db
+    environment:
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /home/postgres/pgdata/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    volumes:
+      - pumpfundata:/home/postgres/pgdata/data
+      - ../db_dumps:/home/postgres/db_dumps
+
+volumes:
+  pumpfundata:
+    name: pumpfundata
+    external: true
